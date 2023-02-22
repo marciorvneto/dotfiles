@@ -2,6 +2,9 @@
 
 # Create a simlink to .vimrc
 ln -rsf .vimrc ~/.vimrc
+#
+# Create a simlink to .vimrc
+ln -rsf nvim ~/.config/nvim
 
 # Download and install VimPlug
 

@@ -29,9 +29,18 @@ call plug#begin()
 	Plug 'tpope/vim-commentary'
 
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'maxmellon/vim-jsx-pretty'
 	Plug 'ap/vim-css-color'
+
+	Plug 'psf/black', {'branch': 'stable'}
+
+
+	Plug 'evanleck/vim-svelte', {'branch': 'main'}
+	Plug 'pangloss/vim-javascript'
+	Plug 'HerringtonDarkholme/yats.vim'
+
+	Plug 'xolox/vim-misc'
+	Plug 'xolox/vim-notes'
 
 
 call plug#end()
@@ -57,7 +66,27 @@ autocmd FileType go nmap <C-x> :!go run . <enter>
 autocmd FileType python nmap <C-x> :!python3 main.py <enter>
 
 nmap <C-p> :Files<Cr>
+nmap <C-n> :Explore <enter>
 inoremap <silent><expr> <C-N>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ coc#refresh()
+
+nnoremap n nzz
+nnoremap N Nzz
+
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-l> <C-w><C-l>
+
+tnoremap <C-j> <C-w><C-j>
+tnoremap <C-k> <C-w><C-k>
+tnoremap <C-h> <C-w><C-h>
+tnoremap <C-l> <C-w><C-l>
+
+"Black configurations
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end
 
