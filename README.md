@@ -22,3 +22,18 @@ moving any existing config aside first.
 ## tmux (3.1+)
 
 Prefix is `M-w`. Truecolor, undercurl and focus events for Neovim; `prefix r` reloads.
+
+## Windows Terminal (WSL)
+
+`windows-terminal/settings.json` is a snapshot, not a symlink: Windows Terminal
+rewrites its own file, so copy it by hand in either direction:
+
+```bash
+WT="/mnt/c/Users/$USER_WIN/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
+cp windows-terminal/settings.json "$WT/settings.json"   # restore
+cp "$WT/settings.json" windows-terminal/settings.json   # save changes
+```
+
+Catppuccin Mocha scheme, solid background for the Kali profile (the default).
+Font: [IosevkaTerm Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases),
+installed on Windows.
