@@ -1,0 +1,1 @@
+/home/marciorvneto/Testes/tiny-ctrl/editors/nvim/ftdetect/aktua.lua
