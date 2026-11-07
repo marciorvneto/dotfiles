@@ -1,1 +1,1 @@
-/home/marciorvneto/Testes/tiny-ctrl/editors/nvim/ftdetect/aktua.lua
+/home/marciorvneto/Projetos/aktua/editors/nvim/ftdetect/aktua.lua
