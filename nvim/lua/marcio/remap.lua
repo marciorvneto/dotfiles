@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Clear search highlighting (Neovim's default for this is <C-l>, used below for windows)
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 vim.keymap.set("n","<C-h>","<C-w>h")
 vim.keymap.set("n","<C-l>","<C-w>l")
 vim.keymap.set("n","<C-k>","<C-w>k")
