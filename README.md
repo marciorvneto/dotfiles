@@ -29,7 +29,7 @@ Prefix is `M-w`. Truecolor, undercurl and focus events for Neovim; `prefix r` re
 rewrites its own file, so copy it by hand in either direction:
 
 ```bash
-WT="/mnt/c/Users/$USER_WIN/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
+WT="/mnt/c/Users/<WindowsUser>/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
 cp windows-terminal/settings.json "$WT/settings.json"   # restore
 cp "$WT/settings.json" windows-terminal/settings.json   # save changes
 ```
