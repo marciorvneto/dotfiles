@@ -1,0 +1,1 @@
+/home/marciorvneto/Projetos/aktua/editors/nvim/syntax/aktua.lua
